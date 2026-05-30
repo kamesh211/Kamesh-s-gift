@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ancient Letter</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+
+background:
+linear-gradient(
+to bottom,
+#6a4b3d,
+#b99874,
+#e7d5bc
+);
+
+overflow:hidden;
+
+}
+
+.sparkle{
+
+position:absolute;
+font-size:25px;
+animation:float 3s infinite;
+
+}
+
+@keyframes float{
+
+50%{
+transform:translateY(-15px);
+}
+
+}
+
+.s1{top:10%;left:10%;}
+.s2{top:15%;right:15%;}
+.s3{bottom:15%;left:20%;}
+.s4{bottom:10%;right:20%;}
+
+.container{
+
+cursor:pointer;
+
+}
+
+.letter{
+
+width:420px;
+height:260px;
+
+background:#f4e4bc;
+
+border:4px solid #b58d60;
+
+box-shadow:
+0 20px 40px rgba(0,0,0,.4);
+
+overflow:hidden;
+
+position:relative;
+
+}
+
+.fold{
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:50%;
+
+background:#e7d0a7;
+
+transform-origin:top;
+
+transition:1.5s;
+
+z-index:5;
+
+}
+
+.open .fold{
+
+transform:
+rotateX(-180deg);
+
+}
+
+.seal{
+
+position:absolute;
+
+top:85px;
+left:45%;
+
+font-size:40px;
+
+z-index:6;
+
+transition:1s;
+
+}
+
+.open .seal{
+
+opacity:0;
+
+}
+
+.content{
+
+padding:20px;
+
+height:100%;
+
+overflow:auto;
+
+opacity:0;
+
+transition:2s;
+
+font-size:16px;
+
+color:#4a3428;
+
+}
+
+.open .content{
+
+opacity:1;
+
+}
+
+.title{
+
+text-align:center;
+
+font-size:28px;
+
+margin-bottom:15px;
+
+}
+
+button{
+
+padding:12px 25px;
+
+border:none;
+
+border-radius:30px;
+
+background:#7b5238;
+
+color:white;
+
+margin-top:20px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="sparkle s1">✨</div>
+<div class="sparkle s2">🌸</div>
+<div class="sparkle s3">🌷</div>
+<div class="sparkle s4">✨</div>
+
+<div class="container"
+
+onclick="openLetter()"
+
+id="box">
+
+<div class="letter">
+
+<div class="fold"></div>
+
+<div class="seal">🕯️</div>
+
+<div class="content">
+
+<h2 class="title">
+
+📜 To Sakthiiii
+
+</h2>
+
+<p>
+
+Happy Birthday sakthiiii,
+
+<br><br>
+
+Today is not just your birthday — it is a beautiful day because a kind-hearted soul like you came into this world.
+
+<br><br>
+
+You are one of the great soul I ever meet in my life. You are strong, kind, precious, and truly a goddess in your own way. Keep shining with your beautiful smile, because you deserve all the happiness and success in this world.
+
+<br><br>
+
+You are my first friend and my best friend. I feel so lucky and thankful to have you beside me. You have helped me in so many moments when I needed support, comfort, and understanding. I can never forget those things. Thank you for always being there for me as a friend.
+
+<br><br>
+
+And always remember this — I will always stand with you, even in your worst times. You are never alone. I am always there for you. I am one of the person to see your happiness and success after your parents.
+
+<br><br>
+
+I hope this birthday brings you endless happiness, peace, success, and all the love you truly deserve. May your life always be filled with smiles, good people, and beautiful memories. Never change the wonderful person you are.
+
+<br><br>
+
+Once again, Happy Birthday, my best friend.
+
+<br><br>
+
+I will always cherish our friendship forever. 🤍
+
+</p>
+
+<a href="page6.html">
+
+<button>
+
+Final Surprise →
+
+</button>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function openLetter(){
+
+document
+.getElementById("box")
+.classList
+.toggle("open");
+
+}
+
+</script>
+
+</body>
+
+</html>

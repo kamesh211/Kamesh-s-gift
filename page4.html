@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Letter To You</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.container{
+
+height:100vh;
+
+display:flex;
+flex-direction:column;
+
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+.title{
+
+font-size:55px;
+
+margin-bottom:30px;
+
+}
+
+.typing{
+
+overflow:hidden;
+
+white-space:nowrap;
+
+width:0;
+
+font-size:28px;
+
+color:#6b3f2d;
+
+animation:
+typing 2s steps(40,end)
+forwards;
+
+}
+
+.line2{
+
+animation-delay:2s;
+
+}
+
+@keyframes typing{
+
+from{
+width:0;
+}
+
+to{
+width:100%;
+}
+
+}
+
+.letter{
+
+font-size:90px;
+
+margin:40px;
+
+animation:
+float 2s infinite;
+
+}
+
+@keyframes float{
+
+50%{
+
+transform:
+translateY(-10px);
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="sparkle" style="top:10%;left:10%;">✨</div>
+<div class="sparkle" style="top:15%;right:15%;">🌸</div>
+<div class="sparkle" style="bottom:15%;left:20%;">🌷</div>
+<div class="sparkle" style="bottom:10%;right:20%;">✨</div>
+
+<div class="container">
+
+<h1 class="title">
+
+💌 Letter To You Sakthi
+
+</h1>
+
+<p class="typing">
+
+Please read it...
+
+</p>
+
+<p class="typing line2">
+
+Another surprise is waiting for you 🤍
+
+</p>
+
+<div class="letter">
+
+📜
+
+</div>
+
+<a href="page5.html" class="next-btn">
+
+Open Letter →
+
+</a>
+
+</div>
+
+</body>
+
+</html>

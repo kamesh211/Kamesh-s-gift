@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Birthday Wish</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.container{
+
+height:100vh;
+
+display:flex;
+flex-direction:column;
+
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+.typing{
+
+overflow:hidden;
+
+white-space:nowrap;
+
+width:0;
+
+font-size:24px;
+
+color:#6b3f2d;
+
+animation:
+typing 1.5s steps(40,end)
+forwards;
+
+}
+
+.line2{
+
+animation-delay:1.5s;
+
+}
+
+.line3{
+
+animation-delay:3s;
+
+}
+
+@keyframes typing{
+
+from{width:0;}
+
+to{width:100%;}
+
+}
+
+.icons{
+
+font-size:50px;
+
+margin-top:30px;
+
+animation:
+float 2s infinite;
+
+}
+
+@keyframes float{
+
+50%{
+
+transform:
+translateY(-8px);
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="sparkle" style="top:10%;left:10%;">✨</div>
+<div class="sparkle" style="top:15%;right:15%;">🌸</div>
+<div class="sparkle" style="bottom:15%;left:20%;">🌷</div>
+<div class="sparkle" style="bottom:10%;right:20%;">✨</div>
+
+<div class="container">
+
+<h1 class="title">
+
+Happy Birthday Sakthi 🤍
+
+</h1>
+
+<p class="typing">
+
+May your life always be as warm as coffee ☕
+
+</p>
+
+<p class="typing line2">
+
+as comforting as a soft cat 🐈
+
+</p>
+
+<p class="typing line3">
+
+and as beautiful as blooming tulips 🌷
+
+</p>
+
+<div class="icons">
+
+☕ 🌷 🐈
+
+</div>
+
+<br><br>
+
+<a href="page3.html" class="next-btn">
+
+Next Surprise →
+
+</a>
+
+</div>
+
+</body>
+
+</html>
